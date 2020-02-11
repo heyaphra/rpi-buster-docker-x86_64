@@ -2,5 +2,4 @@ build:
 	@docker build . | tee .buildlog
 
 all: build
-	@docker run --rm --name rpi-buster -it spidercatnat/raspbian-buster-for-x86_64 /bin/bash
-
+	@docker run --rm -it $(shell grep "Successfully built" .buildlog | cut -d ' ' -f 3) /bin/bash
