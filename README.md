@@ -1,4 +1,5 @@
 # rpi-buster-docker-x86_64
+### Note: this repo is currently unstable and subject to change. I'm currently modifying the shell script to accept custom container runtimes, in addition to building the default latest image with podman to enable systemd.
 
 A docker image containing the latest Raspbian Buster modified with qemu-arm-static to emulate armv4l on x86-64 machines.
 
